@@ -59,11 +59,9 @@ else{
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skipping ahead");
 	video.currentTime += 15;
-	if(video.currentTime > video.duration){
-		video.currentTime = 0;
-		
+	if(video.currentTime >= video.duration){
+		video.load();
 	}
-	video.play()
 });
 
 
