@@ -45,14 +45,14 @@ document.querySelector("#slider").addEventListener("click", function() {
 
 document.querySelector("#mute").addEventListener("click", function() {
 	if(video.muted == true){
-		mute.innerHTML = "Mute"
+		this.innerHTML = "Mute"
 		console.log("Unmute video");
 		video.muted = false;
 }	 
 else{
 	console.log("Mute video");
 	video.muted = true;
-	mute.innerHTML = "Unmute"
+	this.innerHTML = "Unmute"
 }
 });
 
